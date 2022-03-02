@@ -7,7 +7,7 @@ namespace Unite.Identity.Migrations.Configuration
         private static string _defaultSqlHost = "localhost";
         private static string _defaultSqlPort = "5432";
         private static string _defaultSqlUser = "root";
-        private static string _defaultSqlPassword = "Long-p@55w0rd";
+        private static string _defaultSqlPassword = "Long-pa55w0rd";
 
         public static string SqlHost => GetEnvironmentVariable("UNITE_SQL_HOST", _defaultSqlHost);
         public static string SqlPort = GetEnvironmentVariable("UNITE_SQL_PORT", _defaultSqlPort);
