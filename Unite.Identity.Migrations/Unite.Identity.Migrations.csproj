@@ -14,7 +14,7 @@
     <None Remove="Configuration\Options\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Unite.Identity" Version="1.0.1" />
+    <PackageReference Include="Unite.Identity" Version="1.2.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.10">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
