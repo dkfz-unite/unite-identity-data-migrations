@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Design;
-using Unite.Identity.Migrations.Configuration.Options;
+using Unite.Identity.Data.Migrations.Configuration.Options;
 using Unite.Identity.Services;
 
-namespace Unite.Identity.Migrations;
+namespace Unite.Identity.Data.Migrations;
 
 public class IdentityDbContextFactory : IDesignTimeDbContextFactory<IdentityDbContext>
 {

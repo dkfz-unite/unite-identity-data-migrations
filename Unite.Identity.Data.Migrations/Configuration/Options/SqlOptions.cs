@@ -1,6 +1,6 @@
 ﻿using Unite.Identity.Services.Configuration.Options;
 
-namespace Unite.Identity.Migrations.Configuration.Options;
+namespace Unite.Identity.Data.Migrations.Configuration.Options;
 
 public class SqlOptions : ISqlOptions
 {

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Unite.Identity.Services;
 
-namespace Unite.Identity.Migrations.Migrations
+namespace Unite.Identity.Data.Migrations.Migrations
 {
     [DbContext(typeof(IdentityDbContext))]
     [Migration("20220610151246_Permissions")]

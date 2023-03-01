@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Unite.Identity.Migrations.Configuration.Options;
+using Unite.Identity.Data.Migrations.Configuration.Options;
 using Unite.Identity.Services;
 
 
