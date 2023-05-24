@@ -1,4 +1,4 @@
-﻿namespace Unite.Identity.Migrations.Configuration;
+﻿namespace Unite.Identity.Data.Migrations.Configuration;
 
 public static class EnvironmentConfig
 {

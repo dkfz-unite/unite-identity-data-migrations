@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace Unite.Identity.Migrations.Migrations
+namespace Unite.Identity.Data.Migrations.Migrations
 {
     public partial class initial : Migration
     {

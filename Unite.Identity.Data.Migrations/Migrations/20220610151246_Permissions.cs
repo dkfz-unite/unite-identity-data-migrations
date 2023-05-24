@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Unite.Identity.Migrations.Migrations
+namespace Unite.Identity.Data.Migrations.Migrations
 {
     public partial class Permissions : Migration
     {
