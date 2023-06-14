@@ -14,11 +14,11 @@
 		<None Remove="Configuration\Options\" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Unite.Identity" Version="2.0.0" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.6">
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
+		<PackageReference Include="Unite.Identity.Data" Version="2.1.2" />
 	</ItemGroup>
 	<ItemGroup>
 		<Folder Include="Configuration\" />

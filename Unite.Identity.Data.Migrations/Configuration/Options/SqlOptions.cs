@@ -1,4 +1,4 @@
-﻿using Unite.Identity.Services.Configuration.Options;
+﻿using Unite.Identity.Data.Services.Configuration.Options;
 
 namespace Unite.Identity.Data.Migrations.Configuration.Options;
 
