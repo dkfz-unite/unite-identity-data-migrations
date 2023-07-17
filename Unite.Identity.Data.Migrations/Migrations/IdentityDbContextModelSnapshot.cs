@@ -31,20 +31,25 @@ namespace Unite.Identity.Data.Migrations.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<bool>("IsActive")
-                        .HasColumnType("boolean");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("boolean")
+                        .HasDefaultValue(false);
 
                     b.Property<string>("Label")
-                        .HasColumnType("text");
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("text");
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
 
                     b.Property<int?>("Priority")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Provider");
+                    b.ToTable("Provider", (string)null);
                 });
 
             modelBuilder.Entity("Unite.Identity.Data.Entities.User", b =>

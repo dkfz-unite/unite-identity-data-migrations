@@ -8,22 +8,10 @@
 		<SynchReleaseVersion>false</SynchReleaseVersion>
 	</PropertyGroup>
 	<ItemGroup>
-		<None Remove="Unite.Identity" />
-		<None Remove="Microsoft.EntityFrameworkCore.Design" />
-		<None Remove="Configuration\" />
-		<None Remove="Configuration\Options\" />
-		<None Remove="Migrations\" />
-	</ItemGroup>
-	<ItemGroup>
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.6">
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
-		<PackageReference Include="Unite.Identity.Data" Version="2.1.2" />
-	</ItemGroup>
-	<ItemGroup>
-		<Folder Include="Configuration\" />
-		<Folder Include="Configuration\Options\" />
-		<Folder Include="Migrations\" />
+		<PackageReference Include="Unite.Identity.Data" Version="2.2.0" />
 	</ItemGroup>
 </Project>

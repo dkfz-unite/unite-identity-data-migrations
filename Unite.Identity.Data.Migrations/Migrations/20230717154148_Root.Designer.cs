@@ -12,8 +12,8 @@ using Unite.Identity.Data.Services;
 namespace Unite.Identity.Data.Migrations.Migrations
 {
     [DbContext(typeof(IdentityDbContext))]
-    [Migration("20230613150829_Initial")]
-    partial class Initial
+    [Migration("20230717154148_Root")]
+    partial class Root
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -33,20 +33,25 @@ namespace Unite.Identity.Data.Migrations.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<bool>("IsActive")
-                        .HasColumnType("boolean");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("boolean")
+                        .HasDefaultValue(false);
 
                     b.Property<string>("Label")
-                        .HasColumnType("text");
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("text");
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
 
                     b.Property<int?>("Priority")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Provider");
+                    b.ToTable("Provider", (string)null);
                 });
 
             modelBuilder.Entity("Unite.Identity.Data.Entities.User", b =>
