@@ -36,6 +36,7 @@ namespace Unite.Identity.Data.Migrations.Migrations
                         .HasDefaultValue(false);
 
                     b.Property<string>("Label")
+                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("character varying(100)");
 
@@ -48,6 +49,8 @@ namespace Unite.Identity.Data.Migrations.Migrations
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
+
+                    b.HasAlternateKey("Name");
 
                     b.ToTable("Provider", (string)null);
                 });

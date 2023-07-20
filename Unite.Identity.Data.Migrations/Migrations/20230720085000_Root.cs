@@ -30,13 +30,14 @@ namespace Unite.Identity.Data.Migrations.Migrations
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Name = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
-                    Label = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: true),
+                    Label = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
                     IsActive = table.Column<bool>(type: "boolean", nullable: false, defaultValue: false),
                     Priority = table.Column<int>(type: "integer", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Provider", x => x.Id);
+                    table.UniqueConstraint("AK_Provider_Name", x => x.Name);
                 });
 
             migrationBuilder.CreateTable(
