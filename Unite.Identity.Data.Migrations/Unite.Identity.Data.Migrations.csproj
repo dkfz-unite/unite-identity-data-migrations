@@ -9,6 +9,10 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.11" />
-		<PackageReference Include="Unite.Identity.Data" Version="4.1.0" />
+		<PackageReference Include="Unite.Identity.Data" Version="4.3.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- <ProjectReference Include="../../unite-identity-data/Unite.Identity.Data/Unite.Identity.Data.csproj" /> -->
 	</ItemGroup>
 </Project>
